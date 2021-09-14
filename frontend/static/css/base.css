@@ -1,0 +1,11 @@
+label, input {
+    display: block;
+}
+span.helptext {
+    display: none;
+}
+
+#main-container {
+    padding-top: 5%;
+    padding-left: 5%;
+}
