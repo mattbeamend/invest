@@ -5,7 +5,19 @@ span.helptext {
     display: none;
 }
 
+main {
+    display:flex;
+}
+
 #main-container {
-    padding-top: 5%;
-    padding-left: 5%;
+    align-items: center;
+}
+
+#form-login {
+    margin: auto;
+    margin-top: 10%;
+    width: 300px;
+    text-align: center;
+    
+
 }

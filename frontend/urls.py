@@ -1,10 +1,9 @@
 from django import contrib
 from django.conf.urls import url, include
-from frontend.views import dashboard, landing, register
+from frontend.views import home, register
 
 urlpatterns = [
     url('accounts/', include('django.contrib.auth.urls')),
-    url('dashboard/', dashboard, name='dashboard'),
+    url('home/', home, name='home'),
     url('register/', register, name='register'),
-    url('', landing, name='landing'),
 ]

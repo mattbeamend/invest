@@ -4,12 +4,10 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from frontend.forms import CustomUserCreationForm
 
-def landing(request):
-    return render(request, 'frontend/landing.html')
 
 @login_required
-def dashboard(request):
-    return render(request, 'frontend/dashboard.html')
+def home(request):
+    return render(request, 'frontend/home.html')
 
 def register(request):
     if request.method == "GET":
@@ -22,4 +20,4 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect(reverse("dashboard"))
+            return redirect("home")
