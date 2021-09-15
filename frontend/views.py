@@ -9,6 +9,10 @@ from frontend.forms import CustomUserCreationForm
 def home(request):
     return render(request, 'frontend/home.html')
 
+@login_required
+def settings(request):
+    return render(request, 'frontend/settings.html')
+
 def register(request):
     if request.method == "GET":
         return render(

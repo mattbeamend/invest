@@ -18,6 +18,11 @@ main {
     margin-top: 10%;
     width: 300px;
     text-align: center;
-    
+}
 
+#form-register {
+    margin: auto;
+    margin-top: 10%;
+    width: 300px;
+    text-align: center;
 }

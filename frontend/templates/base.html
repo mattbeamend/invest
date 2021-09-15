@@ -26,6 +26,9 @@
 
             <ul class="navbar-nav">
                 {% if user.is_authenticated %}
+                    <li>
+                        <a id="settingsUser" class="nav-link" href="{% url 'settings' %}">{{ user.username }}</a>
+                    </li>
                     <li class="nav-item">
                         <a id="logoutBtn" class="nav-link" href="{% url 'logout' %}">Logout</a>
                     </li>

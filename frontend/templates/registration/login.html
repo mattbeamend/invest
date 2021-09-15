@@ -4,7 +4,7 @@
 
 <form id="form-login" method="post">
     {% csrf_token %}
-    <h1 class="h2 mb-3 font-weight-normal">Login</h1>
+    <h1 class="h2 mb-3 font-weight-normal">Please sign in</h1>
     <div class="form-group">
         <input name="username" type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter username">
     </div>
@@ -15,7 +15,6 @@
         <input type="submit" class="btn btn-lg btn-primary btn-block" value="Login">
     </div>
     <p style="font-size: 14px; margin-top: 10px;" class="text-center">Don't have an account? <a href="{% url 'register' %}">Click Here</a></p>
-    
 </form>
 
 {% endblock %}
