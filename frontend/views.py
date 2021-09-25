@@ -10,8 +10,8 @@ def home(request):
     return render(request, 'frontend/home.html')
 
 @login_required
-def settings(request):
-    return render(request, 'frontend/settings.html')
+def profile(request):
+    return render(request, 'frontend/profile.html')
 
 def register(request):
     if request.method == "GET":
